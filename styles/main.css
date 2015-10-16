@@ -23,6 +23,12 @@ html, body {
   bottom: 3rem;
   left: 0;
   right: 0;
+  z-index: 1;
+  transition: 1s all ease;
+}
+
+.is-active {
+  bottom: -4.5rem;
 }
 
 .fire-menu-button {
