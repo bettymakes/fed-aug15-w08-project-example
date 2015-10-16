@@ -55,7 +55,7 @@ html, body {
   padding: 0;
 }
 
-.fire-product-steps li {
+.fire-step-content {
   background-color: orange;
   margin: 1rem;
   height: 5rem;
@@ -65,7 +65,7 @@ html, body {
   border-radius: 0.3125rem;
 }
 
-.fire-product-steps li:hover {
+.fire-step-content:hover {
   background-color: yellow;
   color: tomato;
 }
@@ -75,7 +75,41 @@ html, body {
   margin: 0 auto;
 }
 
+/* Breakpoint @ 650px when base font size is 16px */
+@media screen and (min-width: 40.625rem) {
+  .fire-tagline {
+    font-size: 1.5rem;
+    background-color: blue;
+  }
+}
 
+
+/* Breakpoint @ 1024px when base font size is 16px */
+@media screen and (min-width: 64rem) {
+  .fire-summary-heading {
+    text-align: center;
+  }
+
+  .fire-product-steps:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .fire-product-steps li {
+    float: left;
+    width: 33.3333%;
+    margin: 0;
+  }
+
+  .fire-step-content {
+    width: 20rem;
+    height: 20rem;  
+    line-height: 20rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+  }
+}
 
 
 
